@@ -1,0 +1,41 @@
+{
+  "name": "multi-tenant-rag",
+  "version": "1.0.0",
+  "description": "Multi-tenant RAG backend with Node.js + TypeScript",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.2",
+    "ollama": "^0.5.17",
+    "pdf-parse": "^1.1.1",
+    "pg": "^8.13.1",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.8.2",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/pg": "^8.11.10",
+    "@types/supertest": "^6.0.3",
+    "@types/uuid": "^10.0.0",
+    "supertest": "^7.1.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}
